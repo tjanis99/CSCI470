@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.4531772575250836" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ListView fx:id="destinationListView" layoutX="17.0" layoutY="31.0" onMouseClicked="#departureInfoOnClick" prefHeight="231.0" prefWidth="235.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+            <Label layoutX="19.0" layoutY="274.0" text="Normal Miles" AnchorPane.leftAnchor="10.0" />
+            <Label layoutX="19.0" layoutY="303.0" text="Supersaver Miles" AnchorPane.leftAnchor="10.0" />
+            <Label layoutX="19.0" layoutY="331.0" text="Upgrade Cost" AnchorPane.leftAnchor="10.0" />
+            <Label layoutX="19.0" layoutY="359.0" text="Supersaver Dates" AnchorPane.leftAnchor="10.0" />
+            <Label alignment="CENTER" layoutX="100.0" layoutY="6.0" text="Destinations" AnchorPane.topAnchor="6.0" />
+            <TextField fx:id="normalMilesTextField" layoutX="121.0" layoutY="270.0" mouseTransparent="true" />
+            <TextField fx:id="supersaverTextField" layoutX="121.0" layoutY="299.0" mouseTransparent="true" />
+            <TextField fx:id="upgradeCostTextField" layoutX="121.0" layoutY="327.0" mouseTransparent="true" />
+            <TextField fx:id="supersaverDatesTextField" layoutX="121.0" layoutY="355.0" mouseTransparent="true" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label alignment="CENTER" layoutX="124.0" layoutY="14.0" text="Redeem Miles" AnchorPane.topAnchor="5.0" />
+            <Label layoutX="28.0" layoutY="27.0" text="Enter Your Miles" AnchorPane.leftAnchor="10.0" />
+            <Label layoutX="28.0" layoutY="54.0" text="Select Month of Departure" AnchorPane.leftAnchor="10.0" />
+            <TextField fx:id="enterMilesTextField" layoutX="154.0" layoutY="23.0" AnchorPane.rightAnchor="5.0" />
+            <Button fx:id="redeemMilesButton" layoutX="125.0" layoutY="82.0" mnemonicParsing="false" onAction="#redeemMilesButtonClick" text="Redeem Miles" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+            <Label layoutX="22.0" layoutY="360.0" text="Your Remaining Miles" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" />
+            <TextField fx:id="remainingMilesTextField" layoutX="45.0" layoutY="364.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="5.0" />
+            <ListView fx:id="departureInfoListView" layoutX="9.0" layoutY="110.0" onMouseClicked="#departureInfoOnClick" prefHeight="252.0" prefWidth="308.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="110.0" />
+            <ComboBox fx:id="departureComboBox" layoutX="158.0" layoutY="50.0" prefHeight="25.0" prefWidth="161.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
